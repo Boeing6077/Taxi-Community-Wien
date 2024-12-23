@@ -1,106 +1,50 @@
-/* Allgemeine Stile */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi Community Wien</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="fahrzeug-suchen.html">Fahrzeug suchen</a></li>
+                <li><a href="fahrzeug-anbieten.html">Fahrzeug anbieten</a></li>
+                <li><a href="taxi-news.html">Taxi-News</a></li>
+                <li><a href="ueber-uns.html">Über uns</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* Header */
-header {
-    background-color: #ffcc00; /* Taxi-Gelb */
-    color: black;
-    padding: 15px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+    <section id="home">
+        <h1>Willkommen in der Taxi Community Wien</h1>
+        <p>Schließe dich unserer exklusiven <a href="https://www.facebook.com/groups/414169462653765/" target="_blank">Facebook-Gruppe</a> an und werde Teil der Community!</p>
+        <button class="facebook-btn" onclick="window.open('https://www.facebook.com/groups/414169462653765/', '_blank')">
+            Facebook-Gruppe beitreten
+        </button>
+    </section>
 
-.header-content h1 {
-    margin: 0;
-    font-size: 24px;
-}
+    <section id="inserate">
+        <h2>Inserate</h2>
+        <p>Finde Inserate oder füge dein eigenes hinzu:</p>
+        <ul>
+            <li><a href="fahrzeug-suchen.html">Fahrzeug suchen</a></li>
+            <li><a href="fahrzeug-anbieten.html">Fahrzeug anbieten</a></li>
+        </ul>
+    </section>
 
-.menu-toggle {
-    background-color: black;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
+    <footer>
+        <p>© 2024 Taxi Community Wien. Alle Rechte vorbehalten.</p>
+    </footer>
 
-/* Navigation */
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-nav ul.show {
-    flex-direction: column;
-}
-
-/* Facebook Button */
-.facebook-button {
-    display: inline-block;
-    background-color: #4267B2; /* Facebook-Blau */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin: 20px 0;
-}
-
-.facebook-button:hover {
-    background-color: #365899; /* Dunkleres Blau */
-}
-
-.fb-icon {
-    font-size: 20px;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-}
-
-main h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
