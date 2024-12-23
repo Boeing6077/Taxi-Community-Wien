@@ -114,6 +114,30 @@ section {
 #contact {
     background-color: #f8f9fa;
 }
+    <style>
+    .facebook-button {
+    display: inline-block;
+    background-color: #4267B2; /* Facebook-Blau */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .facebook-button:hover {
+    background-color: #365899; /* Dunkleres Blau bei Hover */
+  }
+
+  .fb-icon {
+    font-size: 20px;
+  }
+</style>
 
 /* Formular-Styling */
 form {
