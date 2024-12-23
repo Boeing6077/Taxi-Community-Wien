@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="updated-styles.css">
 </head>
 <body>
+    
     <header>
         <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
         <nav>
@@ -55,3 +56,18 @@
     </script>
 </body>
 </html>
+
+<script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/de_DE/sdk.js"></script>
+<script>
+  FB.init({
+    appId      : 'DEINE_APP_ID', 
+    cookie     : true, 
+    xfbml      : true, 
+    version    : 'v16.0' 
+  });
+
+  FB.getLoginStatus(function(response) {
+    console.log(response);
+  });
+</script>
