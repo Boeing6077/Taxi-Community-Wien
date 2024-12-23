@@ -1,191 +1,69 @@
-/* Allgemeine Stile */
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
-}
-
-h1, h2, h3 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-p {
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-/* Navigation */
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem 1rem;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-}
-
-nav ul li {
-    margin: 0;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #f4b400; /* Taxi-Gelb */
-}
-
-/* Mobile Navigation */
-@media (max-width: 768px) {
-    nav ul {
-        display: none; /* Versteckt die Navigation standardmäßig */
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 100%; /* Direkt unter dem Header */
-        left: 0;
-        width: 100%;
-        padding: 1rem 0;
-    }
-
-    nav ul li {
-        text-align: center;
-        margin: 0.5rem 0;
-    }
-
-    nav ul.show {
-        display: flex; /* Zeigt die Navigation an, wenn aktiviert */
-    }
-
-    .menu-toggle {
-        display: block;
-        background-color: #333;
-        color: white;
-        border: none;
-        font-size: 1.2rem;
-        padding: 0.5rem 1rem;
-        cursor: pointer;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-/* Abschnitte */
-section {
-    padding: 4rem 2rem;
-    margin-top: 5rem; /* Platz für die fixe Navigation */
-    border-bottom: 1px solid #ccc;
-}
-
-#home {
-    background-color: #f8f9fa;
-}
-
-#marketplace {
-    background-color: #ffffff;
-}
-
-#news {
-    background-color: #f4f4f4;
-}
-
-#about {
-    background-color: #ffffff;
-}
-
-#contact {
-    background-color: #f8f9fa;
-}
-    <style>
-    .facebook-button {
-    display: inline-block;
-    background-color: #4267B2; /* Facebook-Blau */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .facebook-button:hover {
-    background-color: #365899; /* Dunkleres Blau bei Hover */
-  }
-
-  .fb-icon {
-    font-size: 20px;
-  }
-</style>
-
-/* Formular-Styling */
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 2rem;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-    display: block;
-    margin-top: 1rem;
-    font-weight: bold;
-}
-
-form input, form select, form textarea, form button {
-    width: 100%;
-    margin-top: 0.5rem;
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
     box-sizing: border-box;
 }
 
-form button {
+header {
     background-color: #333;
-    color: white;
+    color: #fff;
+    padding: 10px;
+}
+
+header .menu-toggle {
+    background: none;
     border: none;
-    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+
+header ul.show {
+    display: block;
+}
+
+header ul li {
+    margin: 10px 0;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+section#home {
+    background: #f4f4f4;
+}
+
+.facebook-btn {
+    background-color: #1877f2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
-form button:hover {
-    background-color: #f4b400; /* Gelb für Taxi-Theme */
+.facebook-btn:hover {
+    background-color: #145db2;
 }
 
-/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 10px;
 }
