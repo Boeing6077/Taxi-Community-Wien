@@ -133,7 +133,7 @@ button[type="submit"]:hover {
    Spezifische Stile für Facebook-Gruppe Sektion
    ======================================= */
 section#facebook-group h2 {
-    font-size: 14px; /* Schriftgröße für Überschrift der Facebook-Gruppe */
+    font-size: 16px; /* Schriftgröße für Überschrift der Facebook-Gruppe */
     font-weight: normal;
     color: #333; /* Angepasste Farbe */
     margin-bottom: 15px;
