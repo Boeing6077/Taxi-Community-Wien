@@ -50,7 +50,7 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #333; /* Gleich wie Header */
+    background-color: #333; /* Hintergrund Farbe Gleich wie Header */
     color: #FFD700; /* Taxi-Gelb */
     text-align: center;
     padding: 10px 0;
@@ -65,7 +65,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 #facebook-group-text {
-    font-size: 18px; /* Schriftgröße anpassen */
+    font-size: 10px; /* Schriftgröße anpassen */
     font-weight: bold; /* Optional: Fett für bessere Lesbarkeit */
     color: #333; /* Optional: Farbe anpassen */
     margin-bottom: 10px; /* Abstand nach unten */
