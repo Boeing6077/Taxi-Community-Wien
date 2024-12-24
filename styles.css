@@ -1,5 +1,6 @@
-
-/* Allgemeine Einstellungen */
+/* =======================================
+   Allgemeine Einstellungen für die Webseite
+   ======================================= */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,6 +9,9 @@ body {
     color: #333;
 }
 
+/* =======================================
+   Header-Bereich
+   ======================================= */
 header {
     background-color: #333; /* Harmonisch angepasst */
     color: #FFD700; /* Taxi-Gelb */
@@ -24,6 +28,14 @@ header h1 {
     text-shadow: 1px 1px 2px #000; /* Schwarze Umrandung */
 }
 
+header h1 a {
+    text-decoration: none;
+    color: #FFD700; /* Taxi-Gelb */
+}
+
+/* =======================================
+   Navigation
+   ======================================= */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -49,14 +61,20 @@ nav ul li a:hover {
     color: #fff;
 }
 
+/* =======================================
+   Footer-Bereich
+   ======================================= */
 footer {
-    background-color: #333; /* Hintergrund Farbe Gleich wie Header */
+    background-color: #333; /* Gleich wie Header */
     color: #FFD700; /* Taxi-Gelb */
     text-align: center;
     padding: 10px 0;
     text-shadow: 1px 1px 2px #000; /* Schwarze Umrandung */
 }
 
+/* =======================================
+   Allgemeine Abschnitte (Sections)
+   ======================================= */
 section {
     padding: 20px;
     margin: 20px;
@@ -64,13 +82,10 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-#facebook-group-text {
-    font-size: 1px; /* Schriftgröße anpassen */
-    font-weight: bold; /* Optional: Fett für bessere Lesbarkeit */
-    color: #333; /* Optional: Farbe anpassen */
-    margin-bottom: 10px; /* Abstand nach unten */
-}
-/* Facebook Button */
+
+/* =======================================
+   Facebook-Button
+   ======================================= */
 .facebook-button {
     display: inline-block;
     background-color: #1877F2; /* Original Facebook Blau */
@@ -83,7 +98,8 @@ section {
     border: 2px solid #1877F2;
     transition: background-color 0.3s, color 0.3s;
 }
-facebook-button:hover {
+
+.facebook-button:hover {
     background-color: #FFFFFF; /* Weiß beim Hover */
     color: #1877F2; /* Blau beim Hover */
     border: 2px solid #1877F2;
@@ -92,8 +108,10 @@ facebook-button:hover {
 .fb-icon {
     margin-right: 5px;
 }
-}
-/* Fahrzeug anbieten Button */
+
+/* =======================================
+   Fahrzeug anbieten Button
+   ======================================= */
 button[type="submit"] {
     background-color: #FFD700; /* Taxi-Gelb */
     color: #000; /* Schwarz */
@@ -109,4 +127,14 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #000; /* Schwarz beim Hover */
     color: #FFD700; /* Taxi-Gelb beim Hover */
+}
+
+/* =======================================
+   Spezifische Stile für Facebook-Gruppe Sektion
+   ======================================= */
+section#facebook-group h2 {
+    font-size: 10px; /* Schriftgröße für Überschrift der Facebook-Gruppe */
+    font-weight: normal;
+    color: #333; /* Angepasste Farbe */
+    margin-bottom: 15px;
 }
