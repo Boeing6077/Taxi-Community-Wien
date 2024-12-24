@@ -96,3 +96,20 @@ button.facebook-btn img {
 .fb-link:hover {
     text-decoration: underline;
 }
+/* Fahrzeug anbieten Button */
+button[type="submit"] {
+    background-color: #FFD700; /* Taxi-Gelb */
+    color: #000; /* Schwarz */
+    border: 2px solid #000; /* Schwarzer Rand */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #000; /* Schwarz beim Hover */
+    color: #FFD700; /* Taxi-Gelb beim Hover */
+}
