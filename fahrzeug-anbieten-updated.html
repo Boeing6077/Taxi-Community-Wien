@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrzeug anbieten - Taxi Community Wien</title>
+    <link rel="stylesheet" href="harmonized-styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="color: #FFC107; text-decoration: none;">Taxi Community Wien</a></h1>
+        <nav>
+            <ul>
+                <li><a href="fahrzeug-suchen.html">Fahrzeug suchen</a></li>
+                <li><a href="fahrzeug-anbieten.html">Fahrzeug anbieten</a></li>
+                <li><a href="taxi-news.html">Taxi-News</a></li>
+                <li><a href="ueber-uns.html">Über uns</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Fahrzeug anbieten</h2>
+            <form action="submit-fahrzeug.php" method="POST">
+                <label for="title">Anzeigentitel:</label>
+                <input type="text" id="title" name="title" placeholder="Titel der Anzeige" required>
+
+                <label for="make">Fahrzeugmarke:</label>
+                <input type="text" id="make" name="make" placeholder="Marke (z. B. Mercedes)" required>
+
+                <label for="model">Modell:</label>
+                <input type="text" id="model" name="model" placeholder="Modell (z. B. C-Klasse)" required>
+
+                <label for="year">Baujahr:</label>
+                <input type="number" id="year" name="year" placeholder="Baujahr (z. B. 2022)" required>
+
+                <label for="contact">Kontaktdaten:</label>
+                <textarea id="contact" name="contact" rows="4" placeholder="Name, Telefonnummer oder E-Mail" required></textarea>
+
+                <button type="submit">Fahrzeug anbieten</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Taxi Community Wien. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
