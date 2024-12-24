@@ -65,7 +65,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 #facebook-group-text {
-    font-size: 10px; /* Schriftgröße anpassen */
+    font-size: 1px; /* Schriftgröße anpassen */
     font-weight: bold; /* Optional: Fett für bessere Lesbarkeit */
     color: #333; /* Optional: Farbe anpassen */
     margin-bottom: 10px; /* Abstand nach unten */
