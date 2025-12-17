@@ -1,48 +1,103 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startseite - Taxi Community Wien</title>
-    <!-- Verknüpfung der CSS-Datei -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startseite - Taxi Community Wien</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- HEADER-BEREICH: Enthält den Titel der Seite und die Navigation -->
-    <header>
-        <!-- Titel mit Link zur Startseite -->
-        <h1>
-        <a href="index.html">Taxi Community Wien</a></h1>
-        <!-- Navigation mit Links zu anderen Seiten -->
-        <nav>
-            <ul>
-              <li><a href="taxi-news.html">Taxi-News</a></li>
-              <li><a href="ueber-uns.html">über uns</a></li>
-            </ul>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+
+      <a class="logo" href="index.html" aria-label="Zur Startseite">
+        <img src="tximg.png" alt="Taxi Community Wien Logo">
+      </a>
+
+      <div class="header-content">
+        <h1 class="site-title">
+          <a href="index.html">Taxi Community Wien</a>
+        </h1>
+
+        <nav class="site-nav" aria-label="Hauptnavigation">
+          <ul>
+            <li><a href="taxi-news.html">Taxi-News</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+          </ul>
         </nav>
-    </header>
+      </div>
 
-    <!-- HAUPTBEREICH: Beinhaltet die Inhalte der Startseite -->
-    <main>
-        <!-- Begrüßungsabschnitt -->
-        <section>
-            <h2>Willkommen in der Taxi Community Wien</h2>
-            <p>Hier finden Sie alle wichtigen Informationen, Inserate und Neuigkeiten.</p>
-        </section>
+    </div>
+  </header>
 
-        <!-- FACEBOOK-GRUPPE-BEREICH: Informationen zur Facebook-Gruppe -->
-        <section id="facebook-group">
-            <h2>Schließen Sie sich unserer Facebook-Gruppe an, um mit anderen Mitgliedern zu interagieren:</h2>
-            <!-- Link zur Facebook-Gruppe -->
-            <a href="https://www.facebook.com/groups/414169462653765/" target="_blank" class="facebook-button">
-                <span class="fb-icon">👍</span> Facebook-Gruppe beitreten
-            </a>
-        </section>
-    </main>
+  <!-- MAIN -->
+  <main class="site-main">
 
-    <!-- FOOTER-BEREICH: Beinhaltet das Copyright -->
-    <footer>
-        <p>© 2016 Taxi Community Wien. Alle Rechte vorbehalten.</p>
-    </footer>
+    <!-- HERO -->
+    <article class="article">
+      <header class="article-header">
+        <h2>Willkommen in der Taxi Community Wien</h2>
+      </header>
+
+      <p class="lead">
+        Die Plattform für Wiener Taxifahrer und Unternehmer.
+        Aktuelle Infos, klare Worte und Austausch aus der Praxis.
+      </p>
+
+      <p>
+        Hier findest du Neuigkeiten aus der Branche, Infos zu Regelungen,
+        Demos, Erfahrungen aus dem Alltag und den direkten Austausch mit
+        Kolleginnen und Kollegen.
+      </p>
+    </article>
+
+    <!-- AKTUELLES -->
+    <article class="article">
+      <header class="article-header">
+        <h2>Aktuelles & Demos</h2>
+      </header>
+
+      <p>
+        <strong>Taxi-Demos:</strong> 26.11. und 09.12.2025<br>
+        Infos, Hintergründe und Einschätzungen findest du in den Taxi-News.
+      </p>
+
+      <p>
+        👉 <a class="link" href="taxi-news.html">Zu den aktuellen News</a>
+      </p>
+    </article>
+
+    <!-- COMMUNITY -->
+    <article class="article">
+      <header class="article-header">
+        <h2>Taxi Community Wien</h2>
+      </header>
+
+      <p>
+        Die Community lebt vom Mitmachen. Fahrer helfen Fahrern –
+        offen, ehrlich und ohne Schönreden.
+      </p>
+
+      <a
+        href="https://www.facebook.com/groups/414169462653765/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="facebook-button"
+      >
+        <span class="fb-icon" aria-hidden="true">👍</span>
+        Facebook-Gruppe beitreten
+      </a>
+    </article>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2016 Taxi Community Wien. Alle Rechte vorbehalten.</p>
+  </footer>
+
 </body>
 </html>
