@@ -46,14 +46,14 @@ a {
 }
 
 a:hover {
-  opacity: 0.95;
+  opacity: 0.75;
 }
 
 /* Optional: Fokus sichtbar (Barrierefreiheit) */
 a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--brand);
-  outline-offset: 3px;
+    outline-offset: 3px;
 }
 
 /* ==============================
@@ -77,25 +77,27 @@ button:focus-visible {
 }
 
 .header-inner {
-  max-width: var(--container);
-  margin: 0 auto;
-  padding: var(--space-2) var(--space-4);
+  position: relative;
   display: flex;
   align-items: center;
-  gap: var(--space-3);
 }
 
 /* Logo */
 .logo img {
-  height: 140px;
+  height: 110px;
   width: auto;
   display: block;
+}
+
+.logo {
+  margin-left: 420px;   /* Abstand vom linken Rand */
+  margin-right: 24px;  /* näher Richtung Titel */
 }
 
 /* Title */
 .site-title {
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.2;
 }
 
@@ -120,7 +122,8 @@ button:focus-visible {
 
 .site-nav a {
   color: var(--brand);
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 600;
   text-shadow: 1px 1px 2px #000;
 }
 
@@ -130,9 +133,12 @@ button:focus-visible {
 
 /* Header-Content block (zentriert) */
 .header-content {
-  flex: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
 }
+
 
 /* ==============================
    Sections / Cards
@@ -180,7 +186,7 @@ section p {
   border: 2px solid #1877f2;
   border-radius: 999px;
 
-  font-weight: 800;
+  font-weight: 600;
   font-size: 1rem;
 
   transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.1s;
@@ -269,3 +275,18 @@ background: #111;          /* Box */
   border-left: 4px solid rgba(255, 193, 7, 0.55);
   border-radius: 12px;
 }
+.article-hero .article-header {
+  text-align: left;
+}
+
+.hero-logo {
+  width: 160px;
+  max-width: 100%;
+  height: auto;
+  display: inline-flexbox;
+  margin: 0 auto 14px auto;
+  border-radius: 100px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+
