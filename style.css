@@ -83,19 +83,11 @@ button:focus-visible {
   display: flex;
   align-items: center;
   gap: 24px;
+  justify-content: center;
 }
 
-/* Logo */
-.logo img {
-  height: 110px;
-  width: auto;
-  display: block;
-}
+/* Header Logo Platzhalter */
 
-.logo {
-  margin-left: 420px;   /* Abstand vom linken Rand */
-  margin-right: 24px;  /* näher Richtung Titel */
-}
 
 /* Title */
 .site-title {
@@ -299,11 +291,9 @@ background: #111;          /* Box */
     gap: 12px;
     padding: 12px var(--space-4);
   }
-
   .site-nav ul{
     justify-content: center;
   }
-
   .logo img{
     height: 80px; /* optional kleiner am Handy */
   }
