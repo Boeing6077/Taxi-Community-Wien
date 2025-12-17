@@ -76,10 +76,13 @@ button:focus-visible {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.header-inner {
-  position: relative;
+.header-inner{
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
   display: flex;
   align-items: center;
+  gap: 24px;
 }
 
 /* Logo */
@@ -132,11 +135,10 @@ button:focus-visible {
 }
 
 /* Header-Content block (zentriert) */
-.header-content {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
+.header-content{
+  position: static;
+  transform: none;
+  text-align: left;
 }
 
 
@@ -287,6 +289,24 @@ background: #111;          /* Box */
   margin: 0 auto 14px auto;
   border-radius: 100px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 768px){
+  .header-inner{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    padding: 12px var(--space-4);
+  }
+
+  .site-nav ul{
+    justify-content: center;
+  }
+
+  .logo img{
+    height: 80px; /* optional kleiner am Handy */
+  }
 }
 
 
