@@ -1,37 +1,91 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über uns - Taxi Community Wien</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über uns - Taxi Community Wien</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1><a href="index.html" style="color: #FFC107; text-decoration: none;">Taxi Community Wien</a></h1>
-        <nav>
-            <ul>
-                <li><a href="taxi-news.html">Taxi-News</a></li>
-                <li><a href="ueber-uns.html">über uns</a></li>
-            </ul>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+
+      <a class="logo" href="index.html" aria-label="Zur Startseite">
+        <img src="tximg.png" alt="Taxi Community Wien Logo">
+      </a>
+
+      <div class="header-content">
+        <h1 class="site-title">
+          <a href="index.html">Taxi Community Wien</a>
+        </h1>
+
+        <nav class="site-nav" aria-label="Hauptnavigation">
+          <ul>
+            <li><a href="taxi-news.html">Taxi-News</a></li>
+            <li><a href="ueber-uns.html" aria-current="page">Über uns</a></li>
+          </ul>
         </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Über uns</h2>
-            <p>Die Taxi Community Wien ist die größte Plattform für Taxifahrer und Unternehmer in Wien.</p>
-            <p>Unser Ziel ist es, eine Plattform zu schaffen, die speziell auf die Bedürfnisse von Fahrern und Unternehmern zugeschnitten ist. Dazu gehören:</p>
-            <ul>
-                <li>Das Vernetzen von Fahrern und Unternehmern für eine effizientere Zusammenarbeit.</li>
-                <li>Ein benutzerfreundliches System zur Vermittlung von Fahrzeugen und Fahrern.</li>
-                <li>Bereitstellung aktueller Informationen und Branchen-News, um alle auf dem neuesten Stand zu halten.</li>
-            </ul>
-            <p>Wir sind stolz darauf, ein Teil dieser dynamischen Branche zu sein, und freuen uns, Sie in unserer Community willkommen zu heißen. Lassen Sie uns gemeinsam die Zukunft des Taxi-Gewerbes gestalten!</p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2016 Taxi Community Wien. Alle Rechte vorbehalten.</p>
-    </footer>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="site-main">
+
+    <article class="article">
+      <header class="article-header">
+        <h2>Wir..</h2>
+      </header>
+
+      <p class="lead">
+        Die Taxi Community Wien ist eine Plattform von Fahrern und Unternehmern für Fahrer und Unternehmer.
+        Unser Ziel ist, Informationen schnell und verständlich weiterzugeben und die Interessen der Branche sichtbar zu machen.
+      </p>
+
+      <h3>Was wir machen</h3>
+      <p>
+        Wir sammeln relevante Infos (Regelungen, Änderungen, Demos, Erfahrungen aus dem Alltag) und bereiten sie so auf,
+        dass man sie als Fahrer sofort versteht und nutzen kann – ohne Amtsdeutsch und ohne Umwege.
+      </p>
+
+      <h3>Wofür wir stehen</h3>
+      <ul class="list">
+        <li><strong>Praxis:</strong> Alltagstauglich statt theoretisch.</li>
+        <li><strong>Zusammenhalt:</strong> Fahrer helfen Fahrern.</li>
+        <li><strong>Klartext:</strong> Probleme benennen, Lösungen suchen.</li>
+        <li><strong>Fairness:</strong> Für faire Rahmenbedingungen im Taxigewerbe.</li>
+      </ul>
+
+      <h3>Mitmachen / Kontakt</h3>
+      <p>
+        Am einfachsten erreichst du uns über die Facebook-Gruppe:
+      </p>
+
+      <a
+        href="https://www.facebook.com/groups/414169462653765/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="facebook-button"
+      >
+        <span class="fb-icon" aria-hidden="true">👍</span>
+        Facebook-Gruppe beitreten
+      </a>
+
+      <p class="note">
+        Hinweis: Wir sind keine Behörde und keine offizielle Stelle. Wir sind eine Community – der Inhalt lebt vom Mitmachen.
+      </p>
+    </article>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2016 Taxi Community Wien. Alle Rechte vorbehalten.</p>
+  </footer>
+
 </body>
 </html>
