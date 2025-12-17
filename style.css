@@ -1,111 +1,271 @@
+/* ==============================
+   Design Tokens (Farben, Abstände)
+   ============================== */
+:root {
+  --bg: #000;
+  --surface: #333;
+  --text: #fff;
+  --brand: #ffc107; /* Taxi-Gelb */
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+
+  --radius: 20px;
+  --container: 1100px;
+
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+}
+
+/* ==============================
+   Base / Reset light
+   ============================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif , sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-    color: #ffffff;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
 }
-/* =======================================
-   Header-Bereich
-   ======================================= */
-header {
-    background-color: #333;
-    color: #ffc107;
-    padding: 10px 20px;
-    text-align: center;
-    text-shadow: 1px 1px 2px #000;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
-header h1 {
-    margin: 0;
-    font-size: 1.8em;
-    text-shadow: 1px 1px 2px #000; /* Schwarze Umrandung */
+
+a:hover {
+  opacity: 0.95;
 }
-header h1 a {
-    text-decoration: none;
-    color: #FFC107;
+
+/* Optional: Fokus sichtbar (Barrierefreiheit) */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
 }
-header h1 a:hover {
-    color: #ffffff;
+
+/* ==============================
+   Layout helper
+   ============================== */
+.site-main {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--space-5) var(--space-4);
 }
-/* =======================================
-   Navigation
-   ======================================= */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    background-color: #333;
+
+/* ==============================
+   Header
+   ============================== */
+.site-header {
+  position: static;
+  top: 0;
+  z-index: 1000;
+  background: var(--surface);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
-nav ul li {
-    display: inline;
-    padding: 10px 15px;
+
+.header-inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--space-2) var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
 }
-nav ul li a {
-    color: #FFC107; /* Taxi-Gelb */
-    text-decoration: none;
-    font-weight: bold;
+
+/* Logo */
+.logo img {
+  height: 90px;
+  width: auto;
+  display: block;
 }
-nav ul li a:hover {
-    color: #ffffff;
+
+/* Title */
+.site-title {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.2;
 }
-/* =======================================
-   Allgemeine Abschnitte (Sections)
-   ======================================= */
+
+.site-title a {
+  color: var(--brand);
+  text-shadow: 1px 1px 2px #000;
+}
+
+.site-title a:hover {
+  color: var(--text);
+}
+
+/* Nav */
+.site-nav ul {
+  list-style: none;
+  margin: var(--space-1) 0 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: var(--space-3);
+}
+
+.site-nav a {
+  color: var(--brand);
+  font-weight: 700;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.site-nav a:hover {
+  color: var(--text);
+}
+
+/* Header-Content block (zentriert) */
+.header-content {
+  flex: 1;
+  text-align: center;
+}
+
+/* ==============================
+   Sections / Cards
+   ============================== */
 section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #333;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: var(--space-4);
+  margin: 0 0 var(--space-4) 0;
+  text-align: center;
 }
-/* =======================================
-   Facebook section 
-   ======================================= */
-section#facebook-group h2 {
-    font-size: 16px; 
-    font-weight: normal;
-    text-align: center;
-    border-radius: 20px;
-    color: #ffffff; 
-    margin-bottom: 20px;
+
+section h2 {
+  margin: 0 0 var(--space-2) 0;
+  font-size: 1.25rem;
+  color: var(--text);
 }
-/* =======================================
-   Facebook-Button
-   ======================================= */
+
+section p {
+  margin: 0;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+/*Sections optisch “Hero” machen*/
+.hero {
+  padding: var(--space-5);
+}
+
+/* ==============================
+   Facebook Button
+   ============================== */
 .facebook-button {
-    display: inline-block;
-    background-color: #1877F2; /*Facebook Blau */
-    color: #FFFFFF; /* Weiß */
-    font-size: 18px;
-    font-weight: bold;
-    padding: 5px 10px;
-    text-decoration: none;
-    border-radius: 120px;
-    border: 2px solid #1877F2;
-    transition: background-color 0.5s, color 0.5s;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: var(--space-3);
+  padding: 10px 16px;
+
+  background: #1877f2;
+  color: #fff;
+
+  border: 2px solid #1877f2;
+  border-radius: 999px;
+
+  font-weight: 800;
+  font-size: 1rem;
+
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.1s;
 }
+
 .facebook-button:hover {
-    background-color: #000000; /* Weiß beim Hover */
-    color: #1877F2; /* Blau beim Hover */
-    border: 3px solid #1877F2;
+  background: transparent;
+  color: #1877f2;
 }
+
+.facebook-button:active {
+  transform: scale(0.98);
+}
+
 .fb-icon {
-    margin-right: px;
+  line-height: 1;
 }
-/* =======================================
-   Footer-Bereich
-   ======================================= */
-footer {
-    background-color: #333; /* Gleich wie Header */
-    color: #FFD700; /* Taxi-Gelb */
-    text-align: center;
-    padding: 10px 0;
-    text-shadow: 1px 1px 2px #000; /* Schwarze Umrandung */
+
+/* ==============================
+   Footer
+   ============================== */
+.site-footer {
+  background: var(--surface);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  padding: var(--space-3);
+  color: var(--brand);
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* ==============================
+   News / Article Layout
+   ============================== */
+.article {
+  max-width: 850px;
+  margin: 0 auto 48px auto;   /* Abstand zum nächsten Artikel */
+  padding: 32px;
+background: #111;          /* Box */ 
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.6),
+    inset 0 0 0 1px rgba(255, 193, 7, 0.15);
+
+  text-align: left;
+}
+
+
+.article-header h2 {
+  margin: 0 0 16px 0;
+  padding-bottom: 12px;
+  font-size: 1.6rem;
+  border-bottom: 2px solid rgba(255, 193, 7, 0.4);
+}
+
+
+.article h3 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-size: 1.15rem;
+  color: var(--brand);
+}
+
+.article p {
+  margin-bottom: 16px;
+  line-height: 1.75;
+}
+
+.article .lead {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+.list {
+  margin: 0 0 var(--space-3) 0; /* Liste in über-uns */
+  padding-left: 18px;
+}
+
+.list li {
+  margin-bottom: 10px;  /* Liste in über-uns */
+  line-height: 1.7;
+}
+.note {
+  margin-top: var(--space-4);
+  padding: 14px 16px;
+  background: rgba(255, 193, 7, 0.08);
+  border-left: 4px solid rgba(255, 193, 7, 0.55);
+  border-radius: 12px;
 }
